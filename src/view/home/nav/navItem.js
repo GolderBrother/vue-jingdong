@@ -1,0 +1,33 @@
+export const navItems = [
+    {
+        itemImgUrl:'../../assets/images/nav0.png',
+        itemText:'京东超市'
+    },{
+        itemImgUrl:'../../assets/images/nav1.png',
+        itemText:'全球购'
+    },{
+        itemImgUrl:'../../assets/images/nav2.png',
+        itemText:'服装城'
+    },{
+        itemImgUrl:'../../assets/images/nav3.png',
+        itemText:'京东生鲜'
+    },{
+        itemImgUrl:'../../assets/images/nav4.png',
+        itemText:'京东到家'
+    },{
+        itemImgUrl:'../../assets/images/nav5.png',
+        itemText:'充值中心'
+    },{
+        itemImgUrl:'../../assets/images/nav6.png',
+        itemText:'惠赚钱'
+    },{
+        itemImgUrl:'../../assets/images/nav7.png',
+        itemText:'领券'
+    },{
+        itemImgUrl:'../../assets/images/nav8.png',
+        itemText:'物流查询'
+    },{
+        itemImgUrl:'../../assets/images/nav9.png',
+        itemText:'我的关注'
+    }
+];

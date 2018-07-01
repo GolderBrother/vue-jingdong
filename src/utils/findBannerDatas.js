@@ -1,0 +1,19 @@
+export const findNavDatas = [
+    {
+        imgSrc:'../../assets/images/l1.jpg'
+    },{
+        imgSrc:'../../assets/images/l2.jpg'
+    },{
+        imgSrc:'../../assets/images/l3.jpg'
+    },{
+        imgSrc:'../../assets/images/l4.jpg'
+    },{
+        imgSrc:'../../assets/images/l5.jpg'
+    },{
+        imgSrc:'../../assets/images/l6.jpg'
+    },{
+        imgSrc:'../../assets/images/l7.jpg'
+    },{
+        imgSrc:'../../assets/images/l8.jpg'
+    }
+];

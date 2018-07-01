@@ -1,0 +1,40 @@
+取左边的数据，
+左边传参（id）到后端
+params:{
+    mid:id
+}
+params是axios自带的属性
+参数传到后端，最后返回前端渲染
+
+分类页面的id
+获取分类id值，用来取当前url的值:
+this.$route.params.id
+追加一个/category/:id  路由，指向catagory组件
+
+监听路由id值的变化
+watch:{
+    $route(to){
+        console.log(to.path);规定写法：获取路由
+    }
+}
+
+分类的id是在模板上给的  
+然后通过路由来获取分类id
+
+两个组件，就要用监听来拿id。或者可以组件传参
+
+改dom元素的自定义属性
+this.$set(this.leftDatas[i],'flag',false)
+
+复用搜索功能
+调用之前的搜索代码方法
+
+点击input弹出系统输入法键盘
+移动终端的默认行为不一样
+
+访问地址  main.js文件
+
+childboxli:'childboxli'  属性:'类名' 
+先看前面的内容
+
+react:模板管理系统

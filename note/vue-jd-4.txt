@@ -1,0 +1,82 @@
+引入jq
+main.js中引入
+
+总结跑一遍：
+一、安装脚手架  搭建vue环境，起前端服务，端口号会自动加1
+二、后端起node加环境安装数据库   其后端服务
+
+build.js打包后生成，会自动引入
+端口占用，要ctrl+C来退出，不能直接关掉（进程上服务还是没关）
+
+移动端访问项目
+第一:同一局域网
+第二：本机IP地址  cmd ipconfig  查看本地IP
+手机端  192.168.0.101:8080访问
+
+全局的模块引入就在main.js中引入  import from ''
+
+preload 缩放比例
+
+总共分为上下两大块，底部的是死的数据，上面的是动态加载的（更改路由，加载对应组件数据）
+
+项目重构，整个脚手架项目复制过去，删掉组件等内容，把想要的内容界面内容加进去就行
+
+导入组件渲染
+import
+components
+<template></template>
+
+App.vue中引用的css样式是当前页面的，相当于全局的，因为app.vue里面的子组件也能用
+base.css样式文件是全局的，定义在main.js中
+单独的css样式就在单独的组件中使用
+单应用页面，只有一个页面App.vue
+name="app" 对应的是id="app" 
+
+路由渲染在哪里
+<router-view></router-view>
+
+重定向Url
+{
+    path:'*',
+    redirect:'/home'
+}
+
+后端只提供数据，前端就做界面和跳转
+
+公共的css样式写在index.css文件里面
+
+组件里面嵌套组件
+<CategoryHead></CategoryHead>
+引入
+import CategoryHeadView from './CategoryHead.vue'
+注册组件导出
+export default {
+    compoenents:{
+        CategoryHeadView 
+    }
+}
+
+一进来这个组件就触发的方法
+mounted(){
+    this.getDatas();
+}
+
+图片懒加载：
+v-lazy=""
+
+路由跳转：
+如果是传了参数，就加冒号：
+<router-link :to="/find"><router-link>
+<router-link to="/find"></router-link>
+
+返回
+切换路由，跳到详情页面
+单应用页面，点哪个，就展示路由对应的组件内容，页面没有跳转
+
+难的是在数据的处理和传参
+
+写过的功能组件可以进行收集，下次做过类似的就可以直接搬过来改改
+
+vue会了，react就会50%了
+
+最好的话，不看老师的代码，自己能全部写出来

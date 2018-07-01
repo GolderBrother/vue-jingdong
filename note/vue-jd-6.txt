@@ -1,0 +1,57 @@
+一、我的
+
+1、我的页面：登录（有判断）
+是否登录
+是：我的页面，通过get方式从后台取数据，通过user_id传给后端
+否：登录界面，当前sessionStorage是否有值，没有值就跳到登录界面
+
+①路由中配置  router.config.js
+②mine组件  分为header和main两部分
+H5新特性
+sessionStorage  本地存储  存放在浏览器，关闭浏览器就清楚
+
+2.登录界面 Login.vue
+登录后数据传到后端，再到数据库进行匹配
+
+jd.sql 有测试的账号
+①判断用户名和密码是否输入
+②发起post请求  将loginname,password传入后台
+③本地存储 将loginname password 转换为字符串，存入sessionStorage
+res为 后端返回的数据，前端用来接收的形参
+
+数据都是后台取的，通过get方式从后台取数据
+
+
+二、购物车 vuex  cart.vue
+单击商品存入购物车
++数量增加
+-数量减少
+
+v-show  true显示 false隐藏 
+
+vuex
+getter拿到状态值 
+
+加入购物车，存入addCart
+//vue对象转换成普通对象
+let data = JSON.parse(JSON.Stringify(this.goodsDatas[0]));
+将data值存入store（dispatch）
+
+传入action接收数据
+
+mutations追加数据data
+
+数据的变化写在actions里面
+第一是创建状态，第二个是改变状态 
+数据存在state里面，后面的操作都是在state改变的
+
+计算数组的元素总和(default为默认初始值)
+arr.reduce(function(default,item){
+    return default + item.product_uprice*
+})
+
+打包：
+npm run build
+打包后为css,js,html 放到服务器访问
+
+要改东西的话，在没打包之前就要在项目里面改。

@@ -1,0 +1,16 @@
+.jd-header {
+    width: 100%;
+    height: 45px;
+    background: url('/dist/header-bg.png?f4fac86f31d9c9730afb7293bef05123') repeat-x;
+    background-size: 1px 44px;
+    border-bottom: 1px solid #bfbfbf;
+    position: fixed;
+    z-index: 2;
+    .findname {
+        text-align: center;
+        font-size: 16px;
+        font-family: sans-serif;
+        font-weight: normal;
+        line-height: 45px;
+    }
+}

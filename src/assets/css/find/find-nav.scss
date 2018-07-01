@@ -1,0 +1,21 @@
+.find-nav{
+    width: 100%;
+    .find-nav-box {
+        width: 100%;
+        box-shadow: 0 -2px 10px #ccc;
+        position: fixed;
+        left: 0;
+        top: 45px;
+        background-color: #fff;
+        .tabItem{
+            width: 20%;
+            height: 100%;
+            // padding: 10px 0;
+            text-align: center;
+            color: #333;
+            img{
+                width: 90%;
+            }
+        }
+    }
+}
